@@ -10,7 +10,7 @@
   "author": "Pyotr Vasilev",
   "license": "ISC",
   "dependencies": {
-    "uglify-js": "2.8.13"
+    "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
   },
   "devDependencies": {},
   "repository": {

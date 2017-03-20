@@ -2,8 +2,9 @@
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
+var read = () => readline().split(' ');
 
-var packet = readline().split(' ');
+var packet = read();
 printErr(packet);
 
 // var nbFloors = +packet[0]; // number of floors
@@ -18,7 +19,7 @@ var exits = [];
 exits[+packet[3]] = [exitPos];
 
 for (var i = 0; i < elevatorsCount; i++) {
-    packet = readline().split(' ');
+    packet = read();
     exits[+packet[0]] = [+packet[1]];
 }
 
@@ -26,7 +27,7 @@ for (var i = 0; i < elevatorsCount; i++) {
 
 // game loop
 while (true) {
-    packet = readline().split(' ');
+    packet = read();
 
     // var clonePos = +packet[1]; // position of the leading clone on its floor
     // var cloneFloor = +packet[0]; // floor of the leading clone
