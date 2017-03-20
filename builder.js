@@ -49,14 +49,14 @@ var config = {
 
 var fs = require('fs');
 fs.readFile('./index.js', 'utf8', function (err, data) {
-    if (err) {
-        return console.log(err);
-    }
+    if (err) throw err;
+    
     data = 'function test(readline, print) {' + data + '}';
     var result = UglifyJS.minify(data, config);
     var code = result.code.replace(/^function test\(readline,print\){/, '').replace(/}$/, '');
     fs.writeFile('marvin.js', code, (err) => {
         if (err) throw err;
+        
         console.log(`Marvin update! New size ${code.length}`);
     });
 });
