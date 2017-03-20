@@ -17,7 +17,7 @@ var elevatorsCount = +packet[7]; // number of elevators
 var exits = [];
 exits[+packet[3]] = [exitPos];
 
-for (var i = 0; i < +packet[7]; i++) {
+for (var i = 0; i < elevatorsCount; i++) {
     packet = readline().split(' ');
     exits[+packet[0]] = [+packet[1]];
 }
