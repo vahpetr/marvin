@@ -1,0 +1,29 @@
+{
+  "name": "marvin",
+  "version": "1.0.0",
+  "description": "Marvin. Codingame. Don't-panic challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node builder.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pyotr Vasilev",
+  "license": "ISC",
+  "dependencies": {
+    "uglify-js": "2.8.13"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahpetr/marvin.git"
+  },
+  "keywords": [
+    "mavin",
+    "codingame",
+    "challenge"
+  ],
+  "bugs": {
+    "url": "https://github.com/vahpetr/marvin/issues"
+  },
+  "homepage": "https://github.com/vahpetr/marvin#readme"
+}
